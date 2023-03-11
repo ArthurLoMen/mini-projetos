@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      #welcome {
+        font-size: 36px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">SEJA BEM-VINDO</div>
+    <script>
+      const welcomeElement = document.getElementById("welcome");
+      let colorIndex = 0;
+      const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+      setInterval(() => {
+        welcomeElement.style.color = colors[colorIndex++ % colors.length];
+      }, 1000);
+    </script>
+  </body>
+</html>
